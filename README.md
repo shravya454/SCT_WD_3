@@ -19,7 +19,7 @@ A clean, fully responsive quiz application built with HTML, CSS, and JavaScript.
 ## Technologies Used
 
 * HTML5
-* CSS3
+* CSS
 * JavaScript
 
 ---

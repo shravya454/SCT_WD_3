@@ -1,2 +1,3 @@
-# SCT_WD_3
-Quiz Application
+# Quiz Application
+
+## 

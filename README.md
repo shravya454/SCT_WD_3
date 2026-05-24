@@ -2,8 +2,7 @@
 
 ## Interactive Stopwatch Timer
 
-A clean, fully responsive stopwatch application built with HTML, CSS, and JavaScript
-
+A clean, fully responsive quiz application built with HTML, CSS, and JavaScript.
 ---
 
 ## Features
@@ -27,6 +26,7 @@ A clean, fully responsive stopwatch application built with HTML, CSS, and JavaSc
 
 ## Live Demo
 
+https://sct-quizapplication.netlify.app/
 
 ---
 

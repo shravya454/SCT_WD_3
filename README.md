@@ -1,6 +1,6 @@
 # Quiz Game Application
 
-## Interactive Stopwatch Timer
+## Interactive Quiz Application
 
 A clean, fully responsive quiz application built with HTML, CSS, and JavaScript.
 

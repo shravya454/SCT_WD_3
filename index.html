@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- START SCREEN -->
+  <div class="screen" id="start-screen">
+    <div class="start-card">
+      <div class="logo-badge">QUIZ</div>
+      <h1>Brain Check <span>.</span></h1>
+      <p class="subtitle">Test what you actually know. No cheating.</p>
+
+      <div class="topic-select">
+        <label>Pick a topic</label>
+        <div class="topic-pills" id="topic-pills">
+          <button class="pill active" data-topic="general">General</button>
+          <button class="pill" data-topic="science">Science</button>
+          <button class="pill" data-topic="history">History</button>
+          <button class="pill" data-topic="tech">Technology</button>
+        </div>
+      </div>
+
+      <div class="mode-info">
+        <div class="mode-chip">Single select &amp; Multi select questions</div>
+        <div class="mode-chip">10 questions per round</div>
+      </div>
+
+      <button class="btn-start" id="btn-start">Let's go &rarr;</button>
+    </div>
+  </div>
+
+  <!-- QUIZ SCREEN -->
+  <div class="screen hidden" id="quiz-screen">
+    <div class="quiz-wrapper">
+
+      <div class="quiz-header">
+        <div class="progress-info">
+          <span id="q-counter">Q 1 / 10</span>
+          <span id="q-type-badge" class="type-badge">single</span>
+        </div>
+        <div class="progress-bar-wrap">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="score-live">Score: <strong id="live-score">0</strong></div>
+      </div>
+
+      <div class="question-area" id="question-area">
+        <p class="q-hint" id="q-hint">Pick one answer</p>
+        <h2 class="question-text" id="question-text">Loading question...</h2>
+      </div>
+
+      <div class="options-grid" id="options-grid">
+        <!-- options injected by JS -->
+      </div>
+
+      <div class="quiz-footer">
+        <button class="btn-next" id="btn-next" disabled>Next &rarr;</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- RESULT SCREEN -->
+  <div class="screen hidden" id="result-screen">
+    <div class="result-card">
+      <div class="result-emoji" id="result-emoji">🎉</div>
+      <h2 id="result-title">Great job!</h2>
+      <div class="score-display">
+        <span id="final-score">0</span>
+        <span class="score-sep">/</span>
+        <span id="total-score">10</span>
+      </div>
+      <p id="result-msg" class="result-msg">You did pretty well!</p>
+
+      <div class="result-breakdown" id="result-breakdown">
+        <!-- per-question summary goes here -->
+      </div>
+
+      <div class="result-btns">
+        <button class="btn-retry" id="btn-retry">Try again</button>
+        <button class="btn-home" id="btn-home">Change topic</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
